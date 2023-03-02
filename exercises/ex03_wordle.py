@@ -5,7 +5,7 @@ __author__ = "730611114"
 """This function searches for a character in a string."""
 def contains_char(secret: str, char: str) -> bool:
     assert len(char) == 1
-    idx: str = 0
+    idx: int = 0
     while idx < len(secret):
         # This while loop checks each index of guess.
         if secret[idx] == char:
@@ -20,7 +20,7 @@ def emojified(guess: str, secret: str) -> str:
     GREEN_BOX: str = "\U0001F7E9"
     YELLOW_BOX: str = "\U0001F7E8"
     result: str = ""
-    idx: str = 0
+    idx: int = 0
     while idx < len(guess):
         # This while loop assigns the appropriate emoji to each index of guess.
         if guess[idx] == secret[idx]:
