@@ -1,13 +1,15 @@
 """EX05 - list utility functions."""
 __author__ = "730611114"
 
+
 def only_evens(int_list: list[int]) -> list:
-    """when given a list of integers, return a new list of only the even integers from the given list."""
+    """When given a list of integers, return a new list of only the even integers from the given list."""
     even_list: list[int] = []
     for idx in int_list:
-        if idx %2 == 0:
+        if idx % 2 == 0:
             even_list.append(idx)
     return even_list 
+
 
 def concat(list1: list[int], list2: list[int]) -> list:
     """When given two list of integers, returns a new list that contains all of the integers from the first list followed by all the integers from the second list."""
@@ -17,6 +19,7 @@ def concat(list1: list[int], list2: list[int]) -> list:
     for idx in list2:
         list12.append(idx)
     return list12
+
 
 def sub(a_list: list[int], start: int, end: int) -> list:
     """When given a list of integers and a start and end index, returns a new list which is a subset of the given list, between the specified start index and the end index -1."""
@@ -34,4 +37,3 @@ def sub(a_list: list[int], start: int, end: int) -> list:
             sub_list.append(idx)
         i += 1
     return sub_list
-
